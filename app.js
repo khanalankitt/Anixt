@@ -17,7 +17,7 @@ function printLetter() {
         let startCode = letter >= "A" && letter <= "Z" ? 65 : 97;
         for (let j = startCode; j <= letter.charCodeAt(0); j++) {
           span.innerHTML = String.fromCharCode(j);
-          await new Promise((resolve) => setTimeout(resolve, 10));
+          await new Promise((resolve) => setTimeout(resolve, 20));
         }
       } else {
         span.innerHTML = "&nbsp;";
@@ -26,7 +26,7 @@ function printLetter() {
       if (i < name.length) {
         printLetter();
       }
-    }, 30);
+    }, 50);
   }
 }
 document.getElementById("input").addEventListener("keydown", function (event) {
