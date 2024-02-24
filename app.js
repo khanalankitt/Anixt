@@ -17,7 +17,7 @@ function printLetter() {
         let startCode = letter >= "A" && letter <= "Z" ? 65 : 97;
         for (let j = startCode; j <= letter.charCodeAt(0); j++) {
           span.innerHTML = String.fromCharCode(j);
-          await new Promise((resolve) => setTimeout(resolve, 20));
+          await new Promise((resolve) => setTimeout(resolve, 30));
         }
       } else {
         span.innerHTML = "&nbsp;";
