@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <title>Anixt</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .cont{
+            margin: 100px auto;
+            height: 300px;
+            width: 300px;
+            background:azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .cont>p{
+            font-size: 18px;
+            color: slateblue;
+        }
+        .cont>input{
+            height: 20px;
+            width: 180px;
+            border-radius: 5px;
+            border: 1px solid slateblue;
+            outline: none;
+            padding: 4px 5px;
+            font-size: 15px;
+            color: slateblue;
+        }
+        button{
+            margin-top: 15px;
+            height: 30px;
+            width: 100px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: 1px solid midnightblue;
+            color: white;
+            background: slateblue;
+            border: 1px solid slateblue;
+            cursor: pointer;
+        }
+        #p{
+            margin-top: -10px;
+            height: 20px;
+        }
+        ::placeholder{
+            opacity: 0.4;
+            color: slateblue;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            object-fit: cover;
+            height: 100vh;
+            width: 100vw;
+            top:0px;
+            left: 0px;
+            opacity: 0.3;
+            filter: brightness(30%);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://static.vecteezy.com/system/resources/previews/009/689/030/original/watercolor-seamless-pattern-with-english-alphabet-white-letters-on-a-dark-background-drawing-by-hands-simple-cartoon-style-vector.jpg" alt="BACKGROUND">
+    <div class="cont">
+        <p>Enter your name : </p>
+        <input type="text" id="input" maxlength="31" placeholder="Only String">
+        <button onclick="printLetter()" id="button">
+            Click Me
+        </button>
+        <p>Animated Name: </p>
+        <p id="p">
+        </p>
+        <script src="./app.js"></script>
+    </div>
+</body>
+</html>
