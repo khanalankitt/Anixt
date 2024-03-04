@@ -26,7 +26,7 @@ function printLetter() {
       if (i < name.length) {
         printLetter();
       }
-    }, 50);
+    }, 60);
   }
 }
 document.getElementById("input").addEventListener("keydown", function (event) {
